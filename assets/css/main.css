@@ -56,6 +56,10 @@ header{
   font-size: 66px;
   padding-left: 100px;
   padding-top: 15px;
+  transition: 0.3s;
+}
+.header_logo:hover{
+  color: #DBDBDB;
 }
 .header_nav{
   margin: auto;
@@ -68,8 +72,11 @@ header{
   font-family: 'Montserrat';
   color: #FFF;
   font-size: 20px;
+  transition: 0.3s;
 }
-
+.header_link:hover{
+  color: #DBDBDB;
+}
 .container_section{
   display: flex;
   justify-content: space-between;
@@ -77,33 +84,52 @@ header{
 }
 .container_news{
   padding: 5%;
-  width: 40%;
+  width: 60%;
 
 }
 
 .container_news_section{
   font-family: 'Montserrat';
-  color: #FFF;
-background: rgba(54, 25, 25, .5);
+  color: #DBDBDB;
+background: rgba(192, 192, 192, .3);
     border-radius: 5px;
     border-color: #FFF;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
 }
+.container_news_section:hover{
+    background: rgba(255, 255, 255, .8);
+    color: #333;
+
+}
+
 h1{
   margin: 0;
-  color: #FFF;
+  padding: 15px;
+
 }
 .container_categories a{
   text-decoration: none;
   color: #DBDBDB;
   font-family: 'sailec_regular';
-  padding-bottom: 15px;
+  padding-bottom: 25px;
+  transition: 0.3s;
+}
+
+.container_categories_header{
+  padding: 10px;
+  background: rgba(2, 15, 25, .5);
+      border-radius: 5px;
+      border-color: #FFF;
+      margin-bottom: 10px;
 }
 .container_categories_header h2{
   color: #FFF;
   font-family: 'Montserrat';
 }
 .container_categories{
-  background: rgba(54, 25, 25, .5);
+  background: rgba(192, 192, 192, .3);
       border-radius: 5px;
       border-color: #FFF;
   margin: 5%;
@@ -112,4 +138,36 @@ h1{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  transition: 0.3s;
+}
+.container_categories:hover{
+    background: rgba(255, 255, 255, .8);
+
+}
+.container_categories:hover a{
+  color: #333;
+}
+@media (max-width: 767px) {
+ .container_categories{
+   display: none;
+ }
+ .container_news{
+   width: 100%;
+ }
+ header{
+   flex-direction: column;
+   justify-content: center;
+ }
+ .header_nav{
+   flex-direction: column;
+   margin: 0;
+   text-align: center;
+   width: 100%;
+ }
+ .header_logo{
+
+   text-align: center;
+   padding: 0;
+
+ }
 }
